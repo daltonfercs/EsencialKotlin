@@ -8,12 +8,12 @@ fun main() {
     println(addStartsFormatted)
 
     val welcome = "Welcome to the best experience"
-    val addStartsFormatted1 = addStartsFormat(welcome, 3)
-    println(addStartsFormatted1)
+    println(addStartsFormat(welcome, 3))
 
     val name = "dalton celadita"
-    val addStartsFormatted2 = addStartsFormat(name, 2)
-    println(addStartsFormatted2)
+    println(addStartsFormat(name, 2))
+
+    println(addStartsFormat(name))
 
 }
 
@@ -28,3 +28,5 @@ fun addStartsFormat(text: String, startNumber: Int ): String{
     }
     return textBuilder.toString()
 }
+
+fun addStartsFormat(text: String): String = addStartsFormat(text, 2)
