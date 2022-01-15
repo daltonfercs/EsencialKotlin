@@ -5,7 +5,7 @@ val isvalidate = isValidate( 5) {
     it > 4
 }
     println(isvalidate)
-    
+
     consultProductId(onNext = getOnNextProductIdBehavior())
 }
 fun isValidate (x: Int, validate: (x:Int) -> Boolean): Boolean = validate(x)
